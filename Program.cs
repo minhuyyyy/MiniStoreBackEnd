@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<MiniStoreContext>(o =>
 {
-    o.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+    o.UseSqlServer(builder.Configuration.GetConnectionString("AZURE_SQL CONNECTIONSTRING"));
 });
 
 builder.Services.AddCors(options =>
